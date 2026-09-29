@@ -1,10 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
-	bytes := []byte("a")
-	fmt.Println(bytes)
-	fmt.Println(compress(bytes))
-	fmt.Println(bytes)
+	fmt.Println(longestSubarray([]int{1, 1, 0, 1}))
+	fmt.Println(longestSubarray([]int{0, 1, 1, 1, 0, 1, 1, 0, 1}))
+	fmt.Println(longestSubarray([]int{1, 1, 1}))
 }
