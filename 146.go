@@ -5,7 +5,7 @@ type LRUCache struct {
 	data    map[int]int
 }
 
-func Constructor(capacity int) LRUCache {
+func Constructor146(capacity int) LRUCache { // without 146; 146 here for solve name conflict
 	return LRUCache{
 		history: make([]int, 0, capacity),
 		data:    make(map[int]int, capacity),

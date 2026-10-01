@@ -5,7 +5,11 @@ import (
 )
 
 func main() {
-	fmt.Println(longestSubarray([]int{1, 1, 0, 1}))
-	fmt.Println(longestSubarray([]int{0, 1, 1, 1, 0, 1, 1, 0, 1}))
-	fmt.Println(longestSubarray([]int{1, 1, 1}))
+	obj := Constructor()
+	fmt.Println(obj.Remove(0))
+	fmt.Println(obj.Remove(0))
+	fmt.Println(obj.Insert(0))
+	fmt.Println(obj.GetRandom())
+	fmt.Println(obj.Remove(0))
+	fmt.Println(obj.Insert(0))
 }
