@@ -7,7 +7,7 @@ type RandomizedSet struct {
 	valByIdx []int
 }
 
-func Constructor() RandomizedSet {
+func Constructor380() RandomizedSet { // 380 resolves name conflicts
 	return RandomizedSet{
 		idxByVal: make(map[int]int),
 	}
