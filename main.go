@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	fmt.Println(checkInclusion("adc", "dcda"))
+	fmt.Println(trap([]int{2, 0, 2}))
 }
