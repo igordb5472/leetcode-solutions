@@ -11,15 +11,15 @@ func mergeKLists(lists []*ListNode) *ListNode {
 	if len(lists) == 0 {
 		return nil
 	}
-	return merge(lists, 0, len(lists))
+	return merge23(lists, 0, len(lists))
 }
 
-func merge(lists []*ListNode, l, r int) *ListNode {
+func merge23(lists []*ListNode, l, r int) *ListNode { // 23 resolves name conflicts
 	switch r - l {
 	case 1:
 		return lists[l]
 	default:
-		less, greater := merge(lists, l, (l+r)/2), merge(lists, (l+r)/2, r)
+		less, greater := merge23(lists, l, (l+r)/2), merge23(lists, (l+r)/2, r)
 		if less == nil {
 			return greater
 		}
